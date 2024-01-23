@@ -12,6 +12,10 @@ if (a > b) {
   console.log("il numero maggiore è " + b);
 
 }
+//oppure
+//a>b ?   console.log("il numero maggiore è " + a) :   console.log("il numero maggiore è " + b)
+
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,16 +25,16 @@ if (a > b) {
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-console.log(b === a ? "is equal" : "not equal")
+let equal=6
+console.log(equal === 5 ? "is equal" : "not equal")
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
-
+let divisibile=11
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(b % a === 0 ? "divisibile per 5" : "non divisibile, o risultato decimale")
+console.log(divisibile % 5 === 0 ? "divisibile per 5" : "non divisibile, o risultato decimale")
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -83,11 +87,11 @@ if (totalShoppingCart > 50) {
 totalShoppingCart = articolo1 + articolo2
 
 if (totalShoppingCart > 50) {
-  totalShoppingCart = articolo1 - (20 * 0.20) + articolo2 - (20 * 0.20)
+  totalShoppingCart = articolo1 - (articolo1 * 0.20) + articolo2 - (articolo2 * 0.20)
 
   console.log("BLACK FRIDAY SCONTO 20%, spedizione gratuita, totale da pagare = " + totalShoppingCart)
 } else {
-  totalShoppingCart = articolo1 - (2 * 0.20) + articolo2 - (30 * 0.20)
+  totalShoppingCart = articolo1 - (articolo1 * 0.20) + articolo2 - (articolo2 * 0.20)
   totalShoppingCart = totalShoppingCart + 10;
   console.log("BLACK FRIDAY SCONTO 20%, spedizione 10 euro, totale da pagare = " + totalShoppingCart)
 }
@@ -238,16 +242,8 @@ console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let array=[]
-array.push(1)
-array.push(2)
-array.push(3)
-array.push(4)
-array.push(5)
-array.push(6)
-array.push(7)
-array.push(8)
-array.push(9)
-array.push(10)
+array.push(1,2,3,4,5,6,7,8,9,10)
+
 console.log(array)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
